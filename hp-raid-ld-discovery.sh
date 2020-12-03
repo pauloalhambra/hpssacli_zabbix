@@ -15,4 +15,4 @@ fi
 
 echo -n '{"data":['
 for ld in $ld_list; do echo -n "{\"{#LD}\": \"$ld\"},"; done |sed -e 's:\},$:\}:'
-echo -n ']}'
+echo -n ']}',
